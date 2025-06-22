@@ -1,0 +1,32 @@
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 56px);
+    grid-template-rows: repeat(6, 56px);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    margin-bottom: 36px;
+}
+
+.cellWrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyCell {
+    width: 56px;
+    height: 56px;
+    background: transparent;
+}
+
+.diceAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,39 @@
+.rollButton {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #5bd934, #3ba328);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 0 #2d801f;
+}
+
+.rollButton:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #2d801f;
+}
+
+.rollButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 48px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #6DBF1D, #498013);
+    box-shadow: 0 1px 0px 0px rgba(255,255,255,0.80) inset;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.80) inset;
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.80) inset;
+    cursor: pointer;
+}

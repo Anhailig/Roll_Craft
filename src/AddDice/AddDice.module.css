@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.container {
+    min-width: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.diceIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.plusButton {
+    cursor: pointer;
+}
+

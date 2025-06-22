@@ -1,0 +1,110 @@
+.cellWrapper {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    overflow: visible;
+}
+
+.cell {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+}
+
+.finalCell {
+    background: linear-gradient(180deg,rgba(130, 224, 36, 1) 0%, rgba(0, 0, 0, 0.68) 50%, rgba(255, 214, 0, 1) 100%);
+}
+
+.cell:not(.finalCell):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.glowEffect {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.cornerCell {
+    position: relative;
+}
+
+.cornerCell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+            180deg,
+            rgba(153, 85, 255, 1) 6%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(94, 59, 154, 1) 83%
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cornerBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 138px;
+    height: 131px;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cornerLabel {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    z-index: 3;
+    text-shadow: 0 0 3px black;
+}
+
+.tooltip {
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #ffd93b, #f4b400);
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 25;
+    pointer-events: none;
+}
+

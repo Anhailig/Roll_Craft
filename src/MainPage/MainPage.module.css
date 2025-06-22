@@ -1,0 +1,19 @@
+.pageWrapper {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    min-height: 100vh;
+    background: #181A20;
+    background-image:
+            url("../../public/images/Rectangle_green.png"),
+            url("../../public/images/pattern.png"),
+            url("../../public/images/pattern_flipped.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, top, bottom;
+    background-size: cover, contain, contain;
+}

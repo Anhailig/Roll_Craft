@@ -1,0 +1,21 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.button {
+    text-align: center;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 100%;
+    color: #FFFFFF99;
+    padding: 9px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

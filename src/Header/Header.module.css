@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.titleSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    min-width: 100px;
+    max-width: 126px;
+}
