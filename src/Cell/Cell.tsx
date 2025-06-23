@@ -16,15 +16,18 @@ const Cell: FC<CellProps> = ({ index, isFinalPosition }) => {
     const [autoTooltip, setAutoTooltip] = useState(false);
 
     useEffect(() => {
+        let timer: NodeJS.Timeout;
+
         if (isFinalPosition) {
             setAutoTooltip(true);
-
-            const timer = setTimeout(() => {
+            timer = setTimeout(() => {
                 setAutoTooltip(false);
-            }, 500);
-
-            return () => clearTimeout(timer);
+            }, 1000);
+        } else {
+            setAutoTooltip(false);
         }
+
+        return () => clearTimeout(timer);
     }, [isFinalPosition]);
 
     const showTooltip = isHovered || autoTooltip;
